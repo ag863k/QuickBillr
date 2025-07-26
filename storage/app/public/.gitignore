@@ -1,2 +1,5 @@
-*
+# Track all files except sensitive ones
 !.gitignore
+!.htaccess
+*.env
+*.key

@@ -1,22 +1,60 @@
-*.log
-.DS_Store
-.env*
-.phpactor.json
-.phpunit.result.cache
+# Dependencies
+/node_modules
+/vendor
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build files
+/public/build
+/public/hot
+/public/storage
+
+# Storage
+/storage/*.key
+/storage/app/public
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+/storage/logs
+/storage/pail
+
+# IDE files
 /.fleet
 /.idea
 /.nova
 /.phpunit.cache
 /.vscode
 /.zed
+.phpactor.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+.phpunit.result.cache
+/coverage
+
+# Deployment
 /auth.json
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
 Homestead.json
 Homestead.yaml
-Thumbs.db
+
+# Secrets (for Render deployment)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+/config/secrets.php
+/database/database.sqlite
